@@ -1,3 +1,9 @@
+/* Reset Styles */
+* {
+  box-sizing: border-box; /* Easier calculations for padding, margin, borders */
+  font-size: 100%; /* Ensures font defaults to user-selection for accessibility */
+}
+
 /* Page Styles */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -19,6 +25,7 @@ body {
   width: 100%;
   text-align: center;
   background: hsl(214, 83%, 89%);
+  border: 20px solid black;
 }
 
 h1 {
@@ -76,7 +83,6 @@ blockquote {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
-.
 
 /* Footer Cell */
 .footer {
