@@ -62,6 +62,14 @@ body {
   max-width: 400px;
   height: auto;
 }
+
+/* Included to pass FCC project spec */
+img {
+  max-width: 400px;
+  height: auto;
+  display: block;
+}
+
 .header__img-caption {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 400;
