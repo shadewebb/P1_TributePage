@@ -11,22 +11,24 @@
     rel="stylesheet">
 </head>
 
+<!--Each ID only used to pass FCC project spec, not used in CSS-->
 <body>
-  <div class="container" id="main">
+  <div class="container" id="containerid"> 
     <header class="header">
-      <h1 id="title">Malcolm "Mac Miller" McCormick</h1>
-      <h2>Prolific rapper known for wordplay style and artistic reinvention</h2>
-      <div id="img-div">
+      <h1 class="header__title" id="title">Malcolm "Mac Miller" McCormick</h1>
+      <h2 class="header__subtitle">Prolific rapper known for wordplay style and artistic reinvention</h2>
+      <div class="header__img" id="img-div">
         <img id="image" src="https://peopledotcom.files.wordpress.com/2018/07/unknown-3.jpg"
           alt="Mac Miller Tribute Photo" width="100%">
-        <div id="img-caption">
-          <p>Mac Miller recording in the studio before his passing.</p>
+        <div class="header__img-caption" id="img-caption">
+          Mac Miller recording in the studio before his passing.
         </div>
       </div>
     </header>
+
     <main class="main" id="tribute-info">
-      <section>
-        <h3>Overview</h3>
+      <article class="main__article">
+        <h3 class="main__header">The Life of Mac Miller</h3>
         <p>Malcolm James McCormick (January 19, 1992 – September 7, 2018), known professionally as Mac Miller, was an
           American rapper, singer, and record producer. Born in Pittsburgh, Pennsylvania, Miller began his career in the
           city's hip-hop scene in 2007, at the age of fifteen. He signed a record deal with Pittsburgh-based indie label
@@ -41,31 +43,31 @@
           Staples, Lil B, Ab-Soul, Riff Raff, Smoke DZA, and himself. He is posthumously nominated for Best Rap Album at
           the 61st Annual Grammy Awards for Swimming.</p>
         <p>Miller struggled with substance abuse, which was often referenced in his lyrics.</p>
-      </section>
+        </article>
 
-      <section class="albums">
-        <h3>List of Studio Albums</h3>
-        <div class="albumcell1">
+      <div class="main__albums">
+        <h3 class="main__header">List of Studio Albums</h3>
+        <div class="main__albums-cell">
           2011: Blue Slide Park
         </div>
         <li>2013: Watching Movies with the Sound Off</li>
         <li>2015: GO:OD AM</li>
         <li>2016: The Divine Feminine</li>
         <li>2018: Swimming</li>
+      </div>
 
-      </section>
-
-      <section class="quote">
+      <div class="main__quote">
         <blockquote>
           <p>"The life you live is more important than the words you speak"</p>
-          <span id="quote-author"> - Mac Miller</span>
+          <span> - Mac Miller</span>
         </blockquote>
-      </section>
+      </div>
     </main>
 
     <footer class="footer">
-      <p>Read <a href="https://en.wikipedia.org/wiki/Mac_Miller" target="_blank" id="tribute-link">more about Malcolm
-          McCormick</a> on his Wikipedia page.</p>
+      <!--ID used to pass FCC project spec, not used in CSS-->
+      <div class="footer__reference-link">Read <a href="https://en.wikipedia.org/wiki/Mac_Miller" target="_blank" id="tribute-link">more about Malcolm
+          McCormick</a> on his Wikipedia page.</div>
     </footer>
   </div>
 </body>
