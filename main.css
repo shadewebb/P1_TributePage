@@ -1,8 +1,10 @@
 /* BEM naming conventions are used for this project. */
 /* Reset Styles */
 * {
-  box-sizing: border-box; /* Easier calculations for padding, margin, borders */
-  font-size: 100%; /* Ensures font defaults to user-selection for accessibility */
+  /* Easier calculations for padding, margin, borders */
+  box-sizing: border-box;
+  /* Ensures font defaults to user-selection for accessibility */
+  font-size: 100%;
 }
 
 /* Page Styles */
@@ -18,6 +20,7 @@ body {
   --title-font: 'Playfair Display', sans-serif;
   --content-font: 'Open Sans', sans-serif;
   --img-caption-font: 'Open Sans Condensed', sans-serif;
+
 }
 
 /* Blocks */
@@ -41,6 +44,9 @@ body {
 
 .main {
   grid-row: 2 / 3;
+  display: grid;
+  grid-template: auto auto 1fr 1fr auto/ repeat(3, 1fr);
+  column-gap: 2%;
   max-width: 90%;
   margin: 0 auto;
   padding: 0 20px;
@@ -89,6 +95,7 @@ img {
 /* Main Elements */
 .main__article {
   line-height: 1.8;
+  grid-area: 1 / 1 / 2 / span 3;
 }
 
 .main__header {
@@ -96,20 +103,52 @@ img {
   font-weight: 700;
   font-size: 1.5em;
   margin: 20px 0;
-}
-
-.main__albums {
-  display: block;
+  grid-column: 1 / span 3;
 }
 
 .main__quote {
   font-weight: 700;
   font-style: italic;
   text-align: center;
+  grid-area: 5 / 1 / 6 / span 3;
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.main__albums {
+  text-align: center;
+  font-family: var(--img-caption-font);
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+}
+
+.main__albums img {
+  border: 1px solid black;
+}
+
+.main__album-one {
+  grid-area: 3 / 1 / 4 / span 1;
+}
+
+.main__album-two {
+  grid-area: 3 / 2 / 4 / span 1;
+}
+
+.main__album-three {
+  grid-area: 3 / 3 / 4 / span 1;
+}
+
+.main__album-four {
+  grid-area: 4 / 1 / 5 / span 1;
+}
+
+.main__album-five {
+  grid-area: 4 / 2 / 5 / span 1;
 }
 
 /* Footer Elements */
 .footer__reference-link {
   text-align: center;
 }
-
